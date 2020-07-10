@@ -9,7 +9,6 @@ data class WeatherForecast(
     @SerialName(value = "weather") val weather:  List<WeatherItem>?,
     @SerialName(value = "base") val base: String?,
     @SerialName(value = "main") val main: Main?,
-    @SerialName(value = "visibility") val visibility: Int?,
     @SerialName(value = "wind") val wind: Wind?,
     @SerialName(value = "clouds") val clouds: Clouds?,
     @SerialName(value = "timezone") val timezone: Int?,

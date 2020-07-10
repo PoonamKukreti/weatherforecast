@@ -112,8 +112,8 @@ dependencies {
 
 
     // ViewModel dependency
-    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0-beta01'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0-beta01'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0-alpha05'
 
     // Kotlinx Serialization
     implementation 'org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.11.1'

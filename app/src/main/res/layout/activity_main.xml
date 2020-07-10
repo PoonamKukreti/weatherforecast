@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.pokotechnologies.beeceptor.app.view.viemodel.WeatherViewModel" />
+    </data>
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
@@ -32,6 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="=@{viewmodel.}"
                 android:textColor="@color/white"
                 />
         </LinearLayout>
@@ -294,6 +302,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/white"
+                        android:text="@{viewModel.humidityValue.toString()}"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
                 </LinearLayout>
 
@@ -333,7 +342,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/white"
                         android:text="@string/text_created_by_owner"
-                       android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+                       android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -357,3 +366,4 @@
 
 
 </RelativeLayout>
+</layout>
