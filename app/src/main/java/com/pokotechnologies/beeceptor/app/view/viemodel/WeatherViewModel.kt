@@ -11,6 +11,7 @@ import com.pokotechnologies.beeceptor.app.utils.ServiceUtil
 import com.pokotechnologies.beeceptor.app.utils.WeatherForeCastConstants.API_KEY
 import com.pokotechnologies.beeceptor.app.utils.WeatherForeCastConstants.CHARSET
 import com.pokotechnologies.beeceptor.app.utils.WeatherForeCastConstants.CITY
+import com.pokotechnologies.beeceptor.app.utils.WeatherForeCastConstants.UNIT
 import kotlinx.coroutines.launch
 
 class WeatherViewModel constructor(private val serviceUtil: ServiceUtil) : ViewModel() {
@@ -26,7 +27,7 @@ class WeatherViewModel constructor(private val serviceUtil: ServiceUtil) : ViewM
         viewModelScope.launch {
             runCatching {
                 emitUiState(showProgress = true,weatherForecast =  null,error = null)
-                serviceUtil.weatherState(apiKey = API_KEY,city = CITY,charset = CHARSET)
+                serviceUtil.weatherState(apiKey = API_KEY,city = CITY,charset = CHARSET,units = UNIT)
             }.onSuccess {
                 emitUiState(showProgress = false,weatherForecast = Event(it),error = null)
             }.onFailure {
