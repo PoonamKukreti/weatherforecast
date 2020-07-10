@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Weather Forecast</string>
+    <string name="text_error">Something went wrong</string>
+    <string name="text_created_by">Created By</string>
+    <string name="text_humidity">Humidity</string>
+    <string name="text_pressure">Pressure</string>
+    <string name="text_wind">Wind</string>
+    <string name="text_sunset">Sunset</string>
+    <string name="text_sunrise">Sunrise</string>
+    <string name="text_created_by_owner">Poonam Kukreti</string>
 </resources>
